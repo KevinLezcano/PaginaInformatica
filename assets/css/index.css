@@ -1,0 +1,38 @@
+/*Normalizacion de toda la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilo del contenedor de la barra de navegacion*/
+nav{
+    display: flex;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+}
+/*Fondo del body*/
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.835171568627451) 0%, rgba(45,56,253,0.8267682072829132) 100%);
+}
+/*Estilo de los botones de la barra de navegacion*/
+.navbar{
+    display: flex;
+    margin: 20px;
+    padding: 8px;
+    border-style: solid;
+    border-color: grey;
+    background-color: gray;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Estilo del baner y su imagen*/
+.banner{
+    height: 200px;
+    background-image:url(/assets/Images/gallery.png);
+    background-size: cover; /*Que la imagen cubra todo el espacio*/
+    background-position: center center; /*Posicion del fondo*/
+    background-repeat: no-repeat; /*Que no se repita la imagen*/
+}

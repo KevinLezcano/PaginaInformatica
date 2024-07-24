@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer HTML</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!-- Bosstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="./assets/Images/home.png" type="image/png" sizes="16x16"> <!-- Icono -->
+    <link rel="stylesheet" href="./assets/css/Contactos.css">
+</head>
+
+<body>
+  <header>
+    <div class="banner"></div> <!-- Baner -->
+  </header>       
+<!-- Barra de navegacion -->
+  <nav>
+    <div class="navbar"><a href="./index.html">INICIO</a></div>
+    <div class="navbar"><a href="./Productos.html">PRODUCTOS</a></div>
+    <div class="navbar"><a href="./Contactos.html">CONTACTOS</a></div>
+  </nav>
+
+  <article>
+
+    <div class="containter">
+      <h1>CONTACTOS</h1>
+      <!-- Formulario para el ingreso de datos -->
+      <form action="show_data.html" method="get" id="formConsulta">
+        <fieldset id="bordeForm">
+          <legend>Formulario de consultas</legend>
+          <!-- Input nombre -->
+          <label for="nombre">Nombre</label>
+          <input type="text" name="Nombre" id="Nombre" placeholder="Kevin Lezcano" required="" maxlength="25"><br>
+          <!-- Input email -->
+          <label for="email">Email</label>
+          <input type="email" name="Email" id="Email" placeholder="abc@gmail.com" required="" maxlength="30"><br>
+          <!-- Input telefono -->
+          <label for="telefono">Telefono</label>
+          <input type="number" name="Telefono" id="Telefono" placeholder="3482 123456" required="" oninput=" limitarLongitud(this, 11)"><br>
+          <!-- Input localidad -->
+          <label for="localidad">Localidad</label>
+          <input type="text" name="Localidad" id="Localidad" placeholder="Reconquista" required="" maxlength="25"><br>
+          <!-- Input asunto -->
+          <label for="asunto">Asunto</label>
+          <input type="text" name="Asunto" id="Asunto" placeholder="Consulta, reclamo, sugerencia, etc." required="" maxlength="25"><br>
+          <!-- Input Consulta -->
+          <label for="consulta">Consulta</label>
+          <textarea name="Consulta" id="Consulta" cols="24px" rows="6" required="" maxlength="250"></textarea><br>
+          <!-- Input Enviar -->
+          <input type="submit" name="enviar" id="enviar">
+        </fieldset>
+      </form>
+    </div>
+  </article>
+</body>
+ <script>
+  function limitarLongitud(elemento, maxLength) {
+  if (elemento.value.length > maxLength) {
+    elemento.value = elemento.value.slice(0, maxLength);
+    }
+  }
+  </script>
+  
+</html>

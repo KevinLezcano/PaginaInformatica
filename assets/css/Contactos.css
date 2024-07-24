@@ -1,0 +1,78 @@
+/*Normalizacion de toda la pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Fondo del body*/
+body{
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.835171568627451) 0%, rgba(45,56,253,0.8267682072829132) 100%);
+}
+
+/*Estilo de la barra de navegacion*/
+nav{
+    display: flex;
+    border-style: solid;
+    align-items: center;
+    justify-content: center;
+    background-color: darkgray;
+}
+
+/*Estilo de los botones de la barra de navegacion*/
+.navbar{
+    display: flex;
+    margin: 20px;
+    padding: 8px;
+    border-style: solid;
+    border-color: grey;
+    background-color: gray;
+    border-radius: 20px;
+    font-family: 'Times New Roman';
+}
+
+/*Estilo del baner y su imagen*/
+.banner{
+    height: 200px;
+    background-image:url(/assets/Images/gallery.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*Estilo del contenido del formulario*/
+#formConsulta
+{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px;
+    margin: 5px;
+    border-style: solid;
+    border: 3px;
+    align-items: center;
+    justify-self: center;
+}
+/*Estilo de los bordes del formulario*/
+#bordeForm{
+    border: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*Estilo del article*/
+article{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+/*Estilo del contenedor*/
+.containter{
+    align-items: start;
+    justify-content: center;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
